@@ -1,6 +1,6 @@
 #QRcodeGenerator {
     width: 350px;
-    margin: 50px auto;
+    margin: 0 auto;
     /* border: 5px double rgb(226, 10, 172); */
     /* border-radius: 15px; */
     padding: 20px;
@@ -8,9 +8,10 @@
 }
 
 #QRcodeGenerator h1 {
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: 400;
     margin:20px  auto;
+    text-wrap: nowrap;
 }
 
 #QRcodeGenerator label {

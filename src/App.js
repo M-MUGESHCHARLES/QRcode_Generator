@@ -10,8 +10,6 @@ function App() {
 
       <QRcodeGenerator />
 
-
-
     </div>
   );
 }

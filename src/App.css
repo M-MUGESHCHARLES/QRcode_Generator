@@ -1,3 +1,9 @@
 /* .App {
   text-align: center;
 } */
+
+.App {
+  background-color: #FEFFD2;
+  padding:10% 0 20%;
+  height: 100%;
+}
