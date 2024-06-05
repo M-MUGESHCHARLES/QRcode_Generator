@@ -1,0 +1,69 @@
+#QRcodeGenerator {
+    width: 350px;
+    margin: 50px auto;
+    /* border: 5px double rgb(226, 10, 172); */
+    /* border-radius: 15px; */
+    padding: 20px;
+    /* background-color: rgb(255, 127, 174); */
+}
+
+#QRcodeGenerator h1 {
+    font-size: 30px;
+    font-weight: 400;
+    margin:20px  auto;
+}
+
+#QRcodeGenerator label {
+  display: block;
+  margin: 10px;
+}
+
+#QRcodeGenerator input[type=text] {
+    padding: 8px;
+    width: 90%;
+    border: 1px solid rgb(3, 188, 245);
+    border-radius: 10px;
+    display: block;
+}
+
+#QRcodeGenerator button.GenerateQR-btn , #QRcodeGenerator button.DownloadQR-btn {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#QRcodeGenerator button.GenerateQR-btn{
+    color: white;
+    background-color: rgb(4, 192, 7);
+}
+#QRcodeGenerator button.GenerateQR-btn:hover {
+    background-color: rgb(8, 141, 8);
+}
+#QRcodeGenerator button.GenerateQR-btn:disabled { 
+    background-color: gray;
+    cursor:not-allowed ;
+}
+
+#QRcodeGenerator button.DownloadQR-btn {
+    color: white;
+    background-color: rgb(61, 84, 235);
+    margin-left: 10px;
+}
+#QRcodeGenerator button.DownloadQR-btn:hover { 
+        background-color: rgb(30, 48, 166);
+}
+#QRcodeGenerator button.DownloadQR-btn:disabled {
+   background-color: gray;
+   cursor:not-allowed ;
+}
+
+#QRcodeGenerator img.QRcode-img {
+    margin: 50px auto;
+    display: block;
+}
+
+#QRcodeGenerator img.QRcode-loading {
+    height: 200px;
+    margin: 10px auto;
+}
