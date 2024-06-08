@@ -1,22 +1,40 @@
 #QRcodeGenerator {
-    width: 350px;
-    margin: 0 auto;
+    /* width: max-content; */
+    margin: 10px auto 20%;
     /* border: 5px double rgb(226, 10, 172); */
     /* border-radius: 15px; */
-    padding: 20px;
-    /* background-color: rgb(255, 127, 174); */
+    padding: 20px ;
+}
+
+#QRcodeGenerator .card {
+    box-shadow: 0px 0px 30px 0px rgba(12, 11, 11, 0.75);
+        -webkit-box-shadow: 0px 0px 30px 0px rgba(12, 11, 11, 0.75);
+        -moz-box-shadow: 0px 0px 30px 0px rgba(12, 11, 11, 0.75); 
+        border-radius: 15px;
+        padding: 25px 30px;
+        /* width: max-content; */
+        margin: 5% auto 10px;
+        background-color: #FDF7C3;
+        /* min-width: 290px; */
+        max-width: fit-content;
 }
 
 #QRcodeGenerator h1 {
     font-size: 3rem;
     font-weight: 400;
     margin:20px  auto;
-    text-wrap: nowrap;
+    /* text-wrap: nowrap; */
+    position: relative;
+    color: #FF8787;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+            0px 8px 13px rgba(0, 0, 0, 0.1),
+            0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 #QRcodeGenerator label {
   display: block;
   margin: 10px;
+  color: #797978;
 }
 
 #QRcodeGenerator input[type=text] {
@@ -27,11 +45,17 @@
     display: block;
 }
 
+#QRcodeGenerator .Buttons {
+    margin: 15px auto;
+    width: 100%;
+}
+
 #QRcodeGenerator button.GenerateQR-btn , #QRcodeGenerator button.DownloadQR-btn {
-    margin: 10px 0;
-    padding: 10px;
+    padding: 10px 15px;
     border-radius: 5px;
     border: 1px solid black;
+    display: inline-block ;
+    text-wrap: nowrap;
 }
 
 #QRcodeGenerator button.GenerateQR-btn{
@@ -42,14 +66,14 @@
     background-color: rgb(8, 141, 8);
 }
 #QRcodeGenerator button.GenerateQR-btn:disabled { 
-    background-color: gray;
+    background-color: rgb(197, 193, 193);
     cursor:not-allowed ;
 }
 
 #QRcodeGenerator button.DownloadQR-btn {
     color: white;
     background-color: rgb(61, 84, 235);
-    margin-left: 10px;
+    /* margin-left: 10px; */
 }
 #QRcodeGenerator button.DownloadQR-btn:hover { 
         background-color: rgb(30, 48, 166);
@@ -68,3 +92,8 @@
     height: 200px;
     margin: 10px auto;
 }
+
+#QRcodeGenerator .output-QR { 
+  align-items: center;
+}
+

@@ -44,19 +44,27 @@ export const QRcodeGenerator = () => {
   return (
     <div id='QRcodeGenerator'> 
 
-        <h1> QR-Code Generator </h1>
+      <div className='card'>
+          <h1> QR-Code Generator </h1>
+  
+          <label htmlFor='Input-URL' className='url-label' > Enter the URL : </label>
+          <input type='text' placeholder='Enter the URL' onChange={ (e) => {setQRData(e.target.value)} }/>
+  
+          <label htmlFor='Input-Size' className='size-label'> Enter QR size : (optional) </label>
+          <input type='text' placeholder='Enter QR size eg:150' onChange={ (e) => {setQRSize(parseInt(e.target.value) || 150)} }/>
+  
+          <div className='Buttons '>
+            <button className='GenerateQR-btn m-2' onClick={GenerateQR} disabled={loading} > Generate QR Code </button>
+            <button className='DownloadQR-btn m-2'onClick={DownloadQR}  disabled={!qrCode}> Download QR Code </button>
+          </div>
+  
+      </div>
 
-        <label htmlFor='Input-URL' className='url-label' > Enter the URL : </label>
-        <input type='text' placeholder='Enter the URL' onChange={ (e) => {setQRData(e.target.value)} }/>
-
-        <label htmlFor='Input-Size' className='size-label'> Enter QR size : (optional) </label>
-        <input type='text' placeholder='Enter QR size eg:150' onChange={ (e) => {setQRSize(parseInt(e.target.value) || 150)} }/>
-
-        <button className='GenerateQR-btn' onClick={GenerateQR} disabled={loading} > Generate QR Code </button>
-        <button className='DownloadQR-btn'onClick={DownloadQR}  disabled={!qrCode}> Download QR Code </button>
-
-         {qrCode && <img className='QRcode-img' src={qrCode} alt='QRCode' />  } 
-        {loading && <img className='QRcode-loading' src={QRGif} alt='Please wait Loading...' /> }
+        <div className='output-QR'>
+           {qrCode && <img className='QRcode-img' src={qrCode} alt='QRCode' />  } 
+          {loading && <img className='QRcode-loading' src={QRGif} alt='Please wait Loading...' /> }
+  
+        </div>
 
         
     </div>

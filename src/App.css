@@ -3,7 +3,16 @@
 } */
 
 .App {
-  background-color: #FEFFD2;
-  padding:10% 0 20%;
+  background-color: #F5F3C1;
+  padding:10% 0 5%;
   height: 100%;
+  width: 100%;
+}
+
+.Footer {
+  text-align: center;
+  color: #797978;
+  position: relative;
+  bottom: 0px;
+  margin: 10px;
 }
