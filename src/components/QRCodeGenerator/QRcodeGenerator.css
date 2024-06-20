@@ -14,7 +14,8 @@
         padding: 25px 30px;
         /* width: max-content; */
         margin: 5% auto 10px;
-        background-color: #FDF7C3;
+        /* background-color: #FDF7C3; */
+        background-color: #1f2029;
         /* min-width: 290px; */
         max-width: fit-content;
 }
